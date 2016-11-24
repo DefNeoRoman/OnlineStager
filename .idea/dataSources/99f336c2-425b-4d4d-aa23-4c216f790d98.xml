@@ -1,0 +1,43 @@
+<dataSource name="MySQL - onlinestage@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="onlinestage">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bookmanager" />
+    <schema id="3" name="db_applicant" />
+    <schema id="4" name="information_schema" />
+    <schema id="5" name="mysql" />
+    <schema id="6" name="performance_schema" />
+    <schema id="7" name="sakila" />
+    <schema id="8" name="sys" />
+    <schema id="9" name="test" />
+    <schema id="10" name="world" />
+    <table id="11" parent="1" name="users" />
+    <column id="12" parent="11" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="13" parent="11" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="14" parent="11" name="AGE">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="15" parent="11" name="BADMIN">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="16" parent="11" name="CREATED_DATE">
+      <mandatory>1</mandatory>
+      <data-type>timestamp(4)|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP(4)</default-expression>
+    </column>
+    <key id="17" parent="11" name="PRIMARY">
+      <columns>ID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
